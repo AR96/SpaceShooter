@@ -1,0 +1,155 @@
+@font-face {
+    font-family:"scribble2";
+    src: url("scribble2.ttf") /* TTF file for CSS3 browsers */
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background:#fff;
+    font-family: 'scribble2',sans-serif;
+    letter-spacing: 1.5px;
+
+}
+
+#container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background:url("images/bg.png");
+    overflow: hidden;
+}
+
+
+.char{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+  
+
+}
+
+#Plane{
+    bottom: 8%;
+    left: 60%;
+    height: 100px;
+    width: 100px;
+    background: url("Images/Player.png") no-repeat center;
+
+}
+
+#Enemy_1{
+    top: -100px;
+    left: 60%;
+    height: 100px;
+    width: 100px;
+    background: url("Images/Enemy_1.png") no-repeat center;
+
+}
+#Enemy_2{
+    top: -200px;
+    left: 40%;
+    height: 100px;
+    width: 100px;
+    background: url("Images/Enemy_2.png") no-repeat center;
+}
+#Enemy_3{
+    top: -350px;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    background: url("Images/Enemy_3.png") no-repeat center;
+}
+
+#Enemy_3{
+    top: -450px;
+    left: 20%;
+    height: 100px;
+    width: 100px;
+    background: url("Images/Enemy_2.png") no-repeat center;
+}
+#Enemy_4{
+    top: -50px;
+    left: 88%;
+    height: 100px;
+    width: 100px;
+    background: url("Images/Enemy_1.png") no-repeat center;
+}
+#Enemy_5{
+    top: -50px;
+    left: 88%;
+    height: 100px;
+    width: 100px;
+    background: url("Images/Enemy_2.png") no-repeat center;
+}
+
+#score_div{
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 2%;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    z-index: 10000;
+}
+#kills_div{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    z-index: 10000;
+}
+
+#restart_div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #292929;
+    color: white;
+    font-family: 'scribble2', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    display: none;
+    opacity: 0.5;
+}
+
+#restart {
+    border: none;
+    padding: 25px;
+    color: #fff;
+    font-size: 80px;
+    margin-top: 13%;
+    font-family: 'scribble2',sans-serif;
+    letter-spacing: 2.5px;
+    height: 100%;
+}
+.small_text{
+    font-size: 25px;
+    font-family: 'scribble2',sans-serif;
+    letter-spacing: 1.3px;
+
+}
+
+#block {
+    position: absolute;
+    border: 5px solid #FFB2FF;
+    left: 48%;
+    right: 0px;
+    top: 50%;
+    bottom: 0px;
+    width: 46px;
+    height: 46px;
+    margin: 0;
+    border-radius: 90px;
+    }
+.bullet {
+    background: #E8175DFF;
+    position: absolute;
+    width: 3px;
+    height: 7px;
+    border: 3px solid #E8175eee;
+    border-radius: 20px;
+}
